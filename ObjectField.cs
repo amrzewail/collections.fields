@@ -1,0 +1,16 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Collections.Fields
+{
+
+    [CreateAssetMenu(menuName = "ScriptableObjects/Fields/Object Field")]
+    [PreserveScriptableObject]
+    public class ObjectField : GenericField<UnityEngine.Object> { }
+
+
+    [System.Serializable]
+    public class ObjectReference : GenericReference<UnityEngine.Object, ObjectField, ObjectMB> { }
+}
